@@ -21,6 +21,7 @@
         <li th:if="${dto!=null}" style="width: 200px; height: 200px;">
             <span>[[${dto.title}]]</span>
             <span>[[${dto.fileNames}]]</span><br>
+            <br><br>
             <!-- 업로드한 파일을 가져와서 보여주기 -->
             <!--<img th:src="@{/upload/{fileName}(fileName=${dto.fileNames})}"-->
             <img th:src="|@{/upload}/${dto.fileNames}|"
